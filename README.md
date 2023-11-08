@@ -2,7 +2,7 @@
 
 ## Create Docker Network
 
-To create a docker `network docker network create` command is used. In below log i have created a network using bridge driver named `my_network` and verified that it is created or not using command `docker network ls`
+To create a docker network `docker network create` command is used. In below log i have created a network using bridge driver named `my_network` and verified that it is created or not using command `docker network ls`
 
 `docker network create --driver bridge my_network`
 
@@ -251,7 +251,7 @@ irehankhan@Rehans-Mac-mini ~ % docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
 ## Remove Docker Network
-At last i have removed created docker network named `my_network` using `network docker network rm` command and verified. You can see below logs and commands
+At last i have removed created docker network named `my_network` using `docker network rm` command and verified. You can see below logs and commands
 
 `docker network rm my_network`
 
@@ -267,10 +267,12 @@ f17611ad95fa   my_network   bridge    local
 irehankhan@Rehans-Mac-mini ~ % docker network rm my_network
 my_network
 irehankhan@Rehans-Mac-mini ~ % docker network ls
-NETWORK ID     NAME      DRIVER    SCOPE
-13555d6b203d   bridge    bridge    local
-7ea0e5e47815   host      host      local
-4567ff572487   none      null      local
+NETWORK ID     NAME      DRIVER  SCOPE
+13555d6b203d   bridge    bridge  local
+7ea0e5e47815   host      host    local
+4567ff572487   none      null    local
 ```
+
+<h1>Thank You!</h1>
 
 
